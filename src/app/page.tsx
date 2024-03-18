@@ -1,4 +1,3 @@
-'use client'
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image"
