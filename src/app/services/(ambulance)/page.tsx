@@ -1,23 +1,29 @@
+'use client'
 import { ShieldCheckIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import React from "react";
 
 const Ambulance = () => {
+  const handleSetPhoneNumber = () => {
+    const phoneNumber = "9999189087"; // Your desired phone number
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
-      <div className="absolute top-0 bg-[#f8f9f9] pt-[4rem] md:pt-[8rem] pb-[1rem] flex flex-col overflow-y-scroll h-min">
-        <div className="flex items-center">
+      <div className=" bg-[#f8f9f9] pb-[1rem] flex flex-col overflow-y-auto h-[750px]">
+        <div className="flex items">
           <h1 className="heading text-red-400">Ambulance Service</h1>
         </div>
         <div className="flex items-center">
           <Image
-            src="/images/ambulance.webp"
+            src="/images/ambulance.webp"  
             alt="ambulance"
-            width={800}
+            width={600}
             height={500}
-            className="relative z-[11] w-[100%] h-[100%] object-contain items-center"
+            className="relative z-[11] w-[100%] h-[100%] object-contain items-center p-8 rounded-lg"
           />
         </div>
-        <div className="flex flex-col flex-1 overflow-y-auto">
+        <div className="flex flex-col flex-1">
           <h1 className="text-2xl font-semibold mt-4 mb-4">
             MHARC Ambulance Service
           </h1>
@@ -115,6 +121,13 @@ const Ambulance = () => {
             </div>
           </div>
         </div>
+        <div className="flex items-center justify-center mt-4">
+      <button type="button" 
+      className="bg-blue-500 cursor-pointer p-4"
+      onClick={handleSetPhoneNumber}>
+      Call Get Ambulance
+    </button>
+      </div>
       </div>
 
   );

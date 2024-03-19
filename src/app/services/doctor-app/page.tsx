@@ -8,7 +8,7 @@ const DoctorAppointment = () => {
   const router = useRouter();
 
   return (
-    <div className="absolute top-0 bg-[#f8f9f9] pt-[4rem] md:pt-[8rem] pb-[1rem] flex flex-col overflow-y-scroll h-min">
+    <div className="bg-[#f8f9f9] pb-[1rem] flex flex-col overflow-y-auto h-[750px]">
       <div className="flex items-center">
         <h1 className="heading text-red-400">Doctor Appointment</h1>
       </div>
@@ -16,12 +16,12 @@ const DoctorAppointment = () => {
         <Image
           src="/images/doctorapp.jpg"
           alt="ambulance"
-          width={800}
+          width={600}
           height={500}
-          className="relative z-[11] w-[100%] h-[100%] object-contain items-center"
+          className="relative z-[11] w-[100%] h-[100%] object-contain items-center p-8 rounded-lg"
         />
       </div>
-      <div className="flex flex-col flex-1 overflow-y-auto">
+      <div className="flex flex-col flex-1 ">
         <h1 className="text-2xl font-semibold mt-4 mb-4">
           Professional Medical Service Of Dental
         </h1>
@@ -82,10 +82,10 @@ const DoctorAppointment = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-4">
       <button type="button" 
       className="bg-blue-500 cursor-pointer p-4"
-      onClick={() => router.push('/services/book-doctor-appointment')}>
+      onClick={() => router.push('/book-doctor-appointment')}>
       Book Doctors Appointment
     </button>
       </div>
