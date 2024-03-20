@@ -58,14 +58,14 @@ const Nav = ({ openNav }: Props) => {
                     className="absolute bg-blue-300 w-60 rounded shadow-md mt-2 py-2 px-4 capitalize "
                     onMouseLeave={closeSubMenu}
                   >
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">Ambulance</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">Doctor appointment</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">Elder care</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">International Dr's Consultation</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">Medical tourism</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">MHARC International Lab</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">Supplement product</div>
-                    <div className="text-red-400 hover:text-yellow-300 cursor-pointer">Voc. Medical course</div>
+                    <Link href="/services"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">Ambulance</div></Link>
+                    <Link href="/services/doctor-app"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">Doctor appointment</div></Link>
+                    <Link href="/services/elder-care"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">Elder care</div></Link>
+                    <Link href="/services/international-doctor-consultation"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">International Dr's Consultation</div></Link>
+                    <Link href="/services/medical-tourism"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">Medical tourism</div></Link>
+                    <Link href="/services/mharc-international-lab"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">MHARC International Lab</div></Link>
+                    <Link href="/services/supplement-product"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">Supplement product</div></Link>
+                    <Link href="/services/voc-medical-course"><div className="text-red-400 hover:text-yellow-300 cursor-pointer">Voc. Medical course</div></Link>
                   </div>
                 )}
               </div>

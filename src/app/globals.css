@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .nav-link {
     @apply relative font-semibold text-white cursor-pointer 
@@ -15,7 +14,7 @@
     after:transition after:duration-300 after:origin-center 
     hidden;
   }
-  
+
   .nav-link-mobile {
     @apply relative font-semibold text-white cursor-pointer 
     text-[27px] w-fit md:block 
@@ -25,21 +24,19 @@
     after:transition after:duration-300 after:origin-center;
   }
 
-  .heading{
+  .heading {
     @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase;
   }
-  
+
   .active-link {
     @apply text-yellow-500 uppercase; /* Apply Tailwind CSS utility classes */
     /* Add other styles as needed */
   }
   .bullet {
-    @apply  bg-gray-600 rounded-full h-2 w-2;
+    @apply bg-gray-600 rounded-full h-2 w-2;
     /* width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     background-color: #4A5568;  */
   }
-
-  
 }
