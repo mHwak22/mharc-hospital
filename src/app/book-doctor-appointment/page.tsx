@@ -14,7 +14,7 @@ const BookDoctorAppointment = () => {
     paymentMethod: "",
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e : any) => {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
@@ -22,7 +22,7 @@ const BookDoctorAppointment = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e : any) => {
     e.preventDefault();
     console.log(formData);
   };
